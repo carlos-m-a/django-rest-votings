@@ -1,0 +1,7 @@
+TECH STACK AND STANDARDS
+
+programming language: python (3.9)
+framework: django (4.2)
+databases: postgresql (11.12)
+version control system: git
+commig messages specification: karma
