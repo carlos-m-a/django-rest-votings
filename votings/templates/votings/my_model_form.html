@@ -1,0 +1,27 @@
+{% extends "base/base.html" %}
+
+{% comment "You can use this if you have added the context_processor of this app to settings.py"%}
+    {% extends BASE_TEMPLATE_DIR %}
+{% endcomment %}
+
+{% block title %}Create mymodel{% endblock %} 
+
+{% block content %} 
+      
+    {% load static %}
+
+    <div class="container mt-3 mb-3">
+        <h1>My model 
+            <img src="{% static 'votings/pythonlogo.jpg' %}" alt="Python logo" width="30" height="30">
+        </h1>
+        <form   method="post" class="post-form">
+            <div class="mb-2">
+                {% csrf_token %}
+                {{ form }}
+            </div>
+            <button class="btn btn-primary" type="submit">Create</button>
+            <a href="{% url 'votings:my_model_list' %}" class="btn btn-dark">Cancel</a>
+        </form>
+    </div>
+
+{% endblock %}
