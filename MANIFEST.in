@@ -1,5 +1,5 @@
 recursive-include votings *
-prune reusable_app/__pycache__
+prune votings/__pycache__
 recursive-exclude tests *
 recursive-exclude build *
 recursive-exclude scripts *
